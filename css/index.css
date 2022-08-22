@@ -1,196 +1,174 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
-
-.nav-items{
+  }
+  
+  nav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 36px 0;
     display: flex;
-    position: absolute;
-    justify-content: center;
-    width: 100%;
-}
-
-.nav-item{
-    padding: 20px;
-    font-size: 15px;
-    font-family: 'Poppins';
-}
-
-.nav-item.active-item{
+    align-items: center;
+    justify-content: space-between;
+  }
+  .intro-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .nav-items {
+    display: flex;
+  }
+  .nav-items h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 0 32px;
+    font-weight: 300;
+  }
+  .nav-items h5.active-item {
+    font-weight: 600;
     color: #fe5e35;
-}
-
-.logo{
-    width: 100px;
-    margin-right:240px ;
-    position: absolute;
-    left: 50px;
-    top:20px;
-}
-.icon{
-    position: absolute;
-    right:70px;
-    width: 250px;
-    top:10px
-}
-
-.intro-section{
-    position: relative;
-}
-
-.right-section{
-    position: relative;
-    top:50px;
-}
-
-.left-section h3{
-    position: relative;
-    display: inline;
-    top:90px;
-    left: 50px;
-    font-size: 30px;
-    font-family: 'Poppins';
-}
-.left-section h3 img{
-    width: 40px;
-    position: absolute;
-    margin-left: 10px;
-}
-.left-section h1{
-    position: relative;
-    top:110px;
-    left: 50px;
-    font-size: 60px;
-    font-family: 'Fredoka One';
-}
-
-.mic{
-    position: absolute;
-    right: 170px;
-    width: 370px;
-    top:-130px;
-}
-
-.discount{
-    position: absolute;
-    top:80px;
-    right: 460px;
-    z-index: 1;
-    width: 100px;
-    filter: drop-shadow( -4px 2px 2px #bfafb2);
-}
-
-.discount-content h4{
-    position: absolute;
-    right: 475px;
-    top:110px;
-    z-index: 1;
-    font-size: 15px;
-    color: white;
-    font-family: 'Poppins';
-}
-
-.discount-content h1{
-    position: absolute;
-    right: 480px;
-    top:125px;
-    z-index: 1;
-    font-size: 25px;
-    color: white;
-    font-family: 'Poppins';
-}
-
-.sub-headlines{
-    position: absolute;
-    left: 100px;
-    top: 230px;
-}
-
-.sub-headline{
-    position: relative;
-    margin: 10px 0px;
-    font-size: 20px;
-    justify-items: center;
-    font-family: 'Poppins';
-    top: 25px;
-    left: 20px;
-}
-
-.sub-headline img{
-    background-color: #fe5e35;
-    border-radius: 20px;
-    margin-right: 20px;
-    position: relative;
-    width: 20px;
-}
-
-.text{
-    position: relative;
-    left: 50px;
-    top: 280px;
-    margin-right: 55%;
-    font-size: 10px;
-    font-family: 'Poppins';
-    color: #c9c9c9;
-}
-
-.action-btns{
-    position: absolute;
-    left: 50px;
-    bottom: -380px;
-}
-
-.dots{
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    top:240px;
-    right: 300px;
+  }
+  .left-section {
+    width: 60%;
+  }
+  .left-section h3 {
+    font-size: 36px;
+    padding: 20px 10px 20px 10;
+    font-family: 'Poppins', sans-serif;
+  }
+  .left-section img {
+    width: 50px;
+  }
+  .left-section h1 {
+    font-size: 72px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sub-headlines {
+    padding: 20px 50px;
+  }
+  .sub-headline {
     display: flex;
-}
-
-.right-section .action-btn{
-    position: absolute;
-    top:270px;
-    right: 275px;
-}
-
-.action-btn{
-    width: 150px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 20px;
-    border: none;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  .sub-headline img {
     background-color: #fe5e35;
-    color: white;
-    font-family: 'Poppins';
-}
-
-.dot{
-    margin:0 7px;
-}
-
-.dot.yellow-dot{
-    width: 12px;
-    height: 12px;
-    background-color:yellow;
-    border-radius:20px ;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  .text {
+    padding: 10px 100px 30px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .action-btns button,
+  .right-section button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #fe5e35;
     border: none;
-}
+    font-size: 16px;
+    margin-right: 16px;
+    border-radius: 25px;
+  }
+  .right-section {
+    width: 40%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headphone-div {
+    position: relative;
+  }
+  .discount {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    height: 150px;
+    aspect-ratio: 1/1;
+    filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.4));
+  }
+  .discount-content {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
 
-.dot.black-dot{
-    width: 12px;
-    height: 12px;
-    background-color:black;
-    border-radius:20px ;
-    border: none;
-}
+  .discount-content h4 {
+    margin-left: 24px;
+  }
 
-.dot.tomato-dot{
-    width: 12px;
-    height: 12px;
-    background-color:tomato;
-    border-radius:20px ;
-    border: none;
-}
+  .discount-content h1 {
+    font-size: 44px;
+  }
+  
+  img[alt='headphone'] {
+    width: 80%;
+  }
+  .dots {
+    padding: 24px 0 32px 0;
+    display: flex;
+  }
+  .dots .dot {
+    margin: 0 16px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
+  .yellow-dot {
+    background-color: #fbd104;
+  }
+  .tomato-dot {
+    background-color: #fe5e35;
+  }
+  .black-dot {
+    background-color: #000;
+  }
+
+@media only screen and (max-width: 1024px) {
+    .nav-items {
+      display: none;
+    }
+    .intro-section {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    .right-section,
+    .left-section {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    nav {
+      display: block;
+    }
+    nav img[alt='actions'] {
+      display: none;
+    }
+    .left-section h1 {
+      font-size: 48px;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .left-section h1 {
+      font-size: 36px;
+    }
+    .discount-content {
+      top: 72%;
+      left: 7%;
+    }
+  }
